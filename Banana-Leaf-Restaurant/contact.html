@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"> -->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.tutorialjinni.com/bootstrap-social/5.1.1/bootstrap-social.min.css">
+        <link rel="stylesheet" href="css/contactstyles.css">
+
+        <title>Banana Leaf Restaurant: Contact</title>
+    </head>
+
+    <body>
+        <!-- This is navbar -->
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-auto h1" href="index.html">
+                    <span> Banana Leaf Restaurant</span>
+                    <br>
+                    <img src="img/star_logo.png" alt="star" height="30" width="30">
+                    <span id="brand-certify">ISO Certified</span>
+                </a>
+                <span class="navbar-text">
+                    <a href="contact.html" class="active"><span class="fa fa-user-o fa-lg"></span>&nbsp; Contact &nbsp;</a>
+                    <a data-toggle="modal" data-target="#loginmodal"><span class="fa fa-sign-in fa-lg"></span>&nbsp; Login</a>
+                </span>
+            </div>
+        </nav>
+
+        <!-- This is for login dialog box (modal)-->
+        <div id="loginmodal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul class="d-table nav nav-tabs">
+                            <li class="d-table-cell nav-item nav-pills text-center">
+                                <a class="nav-link active" href="#login" role="tab" data-toggle="tab">Login</a>
+                            </li>
+                            <li class="d-table-cell nav-item nav-pills text-center">
+                                <a class="nav-link" href="#signup" role="tab" data-toggle="tab">Signup</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade show active" id="login">
+                                <div class="row">
+                                    <img id="restaurant-logo" src="img/restaurant_logo_2.png" alt="restaurant_logo" width="30%" height="30%" class="mx-auto">
+                                </div>
+                                <br>
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-2 col-form-label" for="exampleInputEmail">Email:</label>
+                                        <div class="col-10">
+                                            <input type="email" class="form-control" id="exampleInputEmail" placeholder="abc@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-2 col-form-label" for="exampleInputPassword">Password:</label>
+                                        <div class="col-10">
+                                            <input type="password" class="form-control" id="exampleInputPassword" placeholder="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <button id="signin-button" type="button" class="btn btn-sm offset-5">Sign In</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="signup">
+                                <div class="row">
+                                    <img id="restaurant-logo" src="img/restaurant_logo_2.png" alt="restaurant_logo" width="30%" height="30%" class="mx-auto">
+                                </div>
+                                <br>
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-2 col-form-label" for="exampleInputEmail">Email:</label>
+                                        <div class="col-10">
+                                            <input type="email" class="form-control" id="exampleInputEmail" placeholder="abc@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-2 col-form-label" for="exampleMobileNumber">Phone:</label>
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" id="exampleMobileNumber" placeholder="xxxxxxxxxx">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-2 col-form-label" for="exampleInputPassword">Password:</label>
+                                        <div class="col-10">
+                                            <input type="password" class="form-control" id="exampleInputPassword" placeholder="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <button id="signup-button" type="button" class="btn btn-sm offset-5">Sign Up</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-row">
+                            <button type="button" class="btn btn-danger btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="container contact">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Contact Us</h2>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-center">
+                        <img id="restaurant-logo" src="img/restaurant_logo_2.png" alt="restaurant_logo" width="300px">
+                    </div>
+                    <div class="col-6 side-address d-flex justify-content-center">
+                        <div>
+                            <h2>Location Information</h2>
+                            <h5>Our Address</h5>
+                            <address>
+                            7/35, Green Hay Lal Road<br>
+                            Green Hay Street, Boston<br>
+                            United States of America<br>
+                            <span class="fa fa-phone fa-lg"></span>&nbsp; Tel: +837 4521 9838<br>
+                            <i class="fa fa-fax fa-lg"></i>&nbsp; Fax: +867 9645 9461<br>
+                            <i class="fa fa-envelope fa-lg"></i><a href="mailto:banana.leaf@gmail.com">&nbsp; banana.leaf@gmail.com</a>
+                            </address>
+
+                            <div class="col-12">
+                                <a role="button" class="btn btn-primary" href="tel:+83745219838"><i class="fa fa-phone"></i> Call</a>
+                                &nbsp;
+                                <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                                &nbsp;
+                                <a role="button" class="btn btn-success" href="mailto:banana.leaf@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-two">
+                    <div class="col-12">
+                        <h2>Our History</h2>
+                        <hr>
+                    </div>
+                    <div class="history col-12">
+                        <p>
+                            Banana Leaf Restaurant takes pride to introduce itself as one of the leading Authentic High Class A/C Restaurant in Boston, USA. 
+                            Banana Leaf Restaurant was established during late 1990’s and on existence for several years. We have two branches in Boston and 
+                            extend our service in San Diego & Hawai.
+                        </p>
+                        <p>
+                            We have attracted thousands of customers by providing them healthy and tasty foods. We have more than 300 employees 
+                            ready to serve your needs at the most. We have talented chefs to provide healthy foods which you have ever tasted in
+                            and around the city. We have specialized in Millet Foods. We ensure our customers are our strength and make them feel 
+                            at home when they are with us. An outlet to be great with friends or all by yourself. You can eat in, take it to go, 
+                            or have it catered right to you. The feeling is friendly and the food is fabulous. Whenever you need it, wherever you 
+                            need it, it is your own unique world to eat out.
+                        </p>
+                        <p>
+                            We offer Party Hall for free on your special occasions such as Birthday parties, Reception, family - friend’s get-together, 
+                            Official-Business meeting, etc… Our Party Hall is spacious to more than 300 accommodate with fulfilling all your needs. 
+                            We do offer food packages on your occasions to make it more special. We have packages for Breakfast, Lunch and Dinner on 
+                            affordable prices. We ensure our food satisfy not only your budget also your taste buds.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-three">
+                    <div class="col-12">
+                        <h2>Feedback Form</h2>
+                        <hr>
+                    </div>
+
+                    <div class="col-12 col-md-9">
+                        <form>
+                            <div class="form-group row">
+                                <label for="name" class="col-md-2 col-form-label">Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Kria">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="telnum" class="col-12 col-md-2 col-form-label">Contact</label>
+                                <div class="col-5 col-md-3">
+                                    <input type="tel" class="form-control" name="areacode" id="areacode" placeholder="+852">
+                                </div>
+                                <div class="col-7 col-md-7">
+                                        <input type="tel" class="form-control" name="telnum" id="telnum" placeholder="XXXX XXXX">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" name="emailid" id="emailid" placeholder="abc@gmail.com">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6 offset-md-2">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                        <label class="form-check-label" for="approve">
+                                            <strong>May we contact you </strong>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 offeset-md-1">
+                                    <select class="form-control" name="" id="">
+                                        <option value="">Phone</option>
+                                        <option value="">Email</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="feedback" class="col-md-2 col-form-label">Feedback</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" name="feedback" id="feedback" rows="12"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary">Send Feedback</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 align-self-center">
+                            <div class="text-center">
+                                <h5>Our Address</h5>
+                                <address>
+                                7/35, Green Hay Lal Road<br>
+                                Green Hay Street, Boston<br>
+                                United States of America<br>
+                                <span class="fa fa-phone fa-lg"></span>&nbsp; Tel: +837 4521 9838<br>
+                                <i class="fa fa-fax fa-lg"></i>&nbsp; Fax: +867 9645 9461<br>
+                                <i class="fa fa-envelope fa-lg"></i><a href="mailto:banana.leaf@gmail.com">&nbsp; banana.leaf@gmail.com</a>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 align-self-center">
+                            <div class="text-center">
+                                <h5>Social Media</h5>
+                                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-facebook"href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-linkedin"href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-twitter"href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-google"href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                                <a class="btn btn-social-icon"href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

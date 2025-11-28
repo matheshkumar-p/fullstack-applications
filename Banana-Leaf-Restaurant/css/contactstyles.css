@@ -1,0 +1,64 @@
+.navbar-dark{
+    background-color: green;
+}
+
+#brand-certify{
+    font-size: small;
+}
+
+.navbar .container .navbar-text > a:hover{
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+    color: yellow;
+}
+
+.navbar .container .navbar-text > .active{
+    color: yellow;
+}
+
+#signin-button, #signup-button{
+    background-color: green;
+    color: yellow;
+}
+
+.d-table {
+    width: 100%;
+}
+
+#restaurant-logo{
+    border-radius: 50%;
+    border: solid green 2px;
+}
+
+.main-content {
+    position: relative;
+    top: 100px;
+}
+
+footer {
+    background-color: #A0D899;
+    padding: 20px 0px 20px 0px;
+}
+
+.contact{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.side-address{
+    padding-top: 20px;
+}
+
+.history{
+    font-size: large;
+}
+
+.row-two, .row-three{
+    position: relative;
+    top: 25px;
+}
+
+.row-three{
+    padding-bottom: 5px;
+}

@@ -1,0 +1,85 @@
+.navbar-dark{
+    background-color: green;
+}
+
+#brand-certify{
+    font-size: small;
+}
+
+.navbar .container .navbar-text > a:hover{
+    font-size: large;
+    text-decoration: none;
+    cursor: pointer;
+    color: yellow;
+}
+
+#signin-button, #signup-button{
+    background-color: green;
+    color: yellow;
+}
+
+.d-table {
+    width: 100%;
+}
+
+#restaurant-logo{
+    border-radius: 50%;
+    border: solid green 2px;
+}
+
+.main-content {
+    position: relative;
+    top: 100px;
+}
+
+footer {
+    background-color: #A0D899;
+    padding: 20px 0px 20px 0px;
+}
+
+.row-content{
+    padding: 10px;
+}
+
+.card-title{
+    color: yellow;
+}
+
+.main-content .container .col-4 .card .card-body > a:hover{
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer;
+    color: yellow;
+    border: solid 2px yellowgreen;
+}
+
+#first-heading-para2{
+    padding-top: 6px;
+}
+
+.carousel {
+    background: lightgrey; }
+    .carousel .carousel-item {
+      height: 300px; }
+      .carousel .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px; 
+}
+
+.spe-feature{
+    padding-right: 25px;
+}
+
+#menu{
+    color: yellow;
+    margin-left: 25px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+#menu1, #menu2, #menu3{
+    border: 2px solid green;
+    width: 100%;
+}
