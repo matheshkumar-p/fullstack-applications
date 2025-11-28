@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sales Predictor</title>
+
+        <link rel="stylesheet" href="css/pred-styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="active"><i class="bi bi-house"></i>Home</a>
+            <a href="index.html"><i class="bi bi-question-circle"></i>About</a>
+            <a href="index.html"><i class="bi bi-people"></i>Contributors</a>
+            <a href="predictor.html" class="predictor-float-right"><i class="bi bi-graph-up"></i>Sales Predictor</a>
+        </nav>
+
+
+        <h1 class="heading">Store Sales Predictor</h1>
+        <h1 class="sub-heading">Enter necessary details to predict sales.</h1>
+
+        <div class="form">
+            <!-- <form action="">
+                <label for="weight">Item Weight</label>
+                <input type="text" id="weight" name="weight" placeholder="Enter Item Weight ...">
+
+                <label for="fat">Item Fat Content</label>
+                <select id="fat" name="fat">
+                    <option value="lowfat">Low Fat</option>
+                    <option value="regular">Regular</option>
+                </select>
+
+                <label for="type">Item Type</label>
+                <select id="type" name="type">
+                    <option value="food">Food</option>
+                    <option value="nc">Non Consumables</option>
+                    <option value="drinks">Drinks</option>
+                </select>
+
+                <label for="mrp">Item MRP</label>
+                <input type="text" id="mrp" name="mrp" placeholder="Enter Item MRP ...">
+
+                <label for="identifier">Outlet Identifier</label>
+                <select id="identifier" name="identifier">
+                    <option value="o1">OUT010</option>
+                    <option value="o2">OUT013</option>
+                    <option value="o3">OUT017</option>
+                    <option value="o4">OUT018</option>
+                    <option value="o5">OUT019</option>
+                    <option value="o6">OUT027</option>
+                    <option value="o7">OUT035</option>
+                    <option value="o8">OUT045</option>
+                    <option value="o9">OUT046</option>
+                    <option value="o10">OUT049</option>
+                </select>
+
+                <label for="year">Outlet Establishment Year</label>
+                <select id="year" name="year">
+                    <option value="t1">1985</option>
+                    <option value="t2">1987</option>
+                    <option value="t3">1997</option>
+                    <option value="t4">1998</option>
+                    <option value="t5">1999</option>
+                    <option value="t6">2002</option>
+                    <option value="t7">2004</option>
+                    <option value="t8">2007</option>
+                    <option value="t9">2009</option>
+                </select>
+
+                <label for="size">Outlet Size</label>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="ltype">Outlet Location Type</label>
+                <select id="ltype" name="ltype">
+                    <option value="tier1">Tier1</option>
+                    <option value="tier2">Tier2</option>
+                    <option value="tier3">Tier3</option>
+                </select>
+
+                <label for="type">Outlet Type</label>
+                <select id="type" name="type">
+                    <option value="s1">Supermarket Type1</option>
+                    <option value="s2">Supermarket Type2</option>
+                    <option value="s3">Supermarket Type3</option>
+                    <option value="s4">Grocery Store</option>
+                </select>
+            
+                <input type="submit" value="Submit">
+            </form> -->
+
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Item Weight</td>
+                        <td>
+                            <input type="text" id="weight" name="weight" placeholder="Enter Item Weight ...">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Item Fat Content</td>
+                        <td>
+                            <button>Low Fat</button>
+                            <button>Regular</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Item Type</td>
+                        <td class="show">
+                            <button>Food</button>
+                            <button>Non Consumables</button>
+                            <button>Drinks</button>
+                        </td>
+
+                        <td class="hide">
+                            <select id="type" name="type" class="hide">
+                                <option value="food">Food</option>
+                                <option value="nc">Non Consumables</option>
+                                <option value="drinks">Drinks</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Item MRP</td>
+                        <td>
+                            <input type="text" id="mrp" name="mrp" placeholder="Enter Item MRP ...">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Outlet Identifier</td>
+                        <td class="show">
+                            <button>OUT010</button>
+                            <button>OUT013</button>
+                            <button>OUT017</button>
+                            <button>OUT018</button>
+                            <button>OUT019</button>
+                            <button>OUT027</button>
+                            <button>OUT035</button>
+                            <button>OUT045</button>
+                            <button>OUT046</button>
+                            <button>OUT049</button>
+                        </td>
+
+                        <td class="hide">
+                            <select id="identifier" name="identifier">
+                                <option value="o1">OUT010</option>
+                                <option value="o2">OUT013</option>
+                                <option value="o3">OUT017</option>
+                                <option value="o4">OUT018</option>
+                                <option value="o5">OUT019</option>
+                                <option value="o6">OUT027</option>
+                                <option value="o7">OUT035</option>
+                                <option value="o8">OUT045</option>
+                                <option value="o9">OUT046</option>
+                                <option value="o10">OUT049</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Outlet Establishment Year</td>
+                        <td class="show">
+                            <button>1985</button>
+                            <button>1987</button>
+                            <button>1997</button>
+                            <button>1998</button>
+                            <button>1999</button>
+                            <button>2002</button>
+                            <button>2004</button>
+                            <button>2007</button>
+                            <button>2009</button>
+                        </td>
+
+                        <td class="hide">
+                            <select id="year" name="year">
+                                <option value="t1">1985</option>
+                                <option value="t2">1987</option>
+                                <option value="t3">1997</option>
+                                <option value="t4">1998</option>
+                                <option value="t5">1999</option>
+                                <option value="t6">2002</option>
+                                <option value="t7">2004</option>
+                                <option value="t8">2007</option>
+                                <option value="t9">2009</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Outlet Size</td>
+                        <td>
+                            <button>Small</button>
+                            <button>Medium</button>
+                            <button>High</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Outlet Location Type</td>
+                        <td>
+                            <button>Tier1</button>
+                            <button>Tier2</button>
+                            <button>Tier3</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Outlet Type</td>
+                        <td class="show">
+                            <button>Supermarket Type1</button>
+                            <button>Supermarket Type2</button>
+                            <button>Supermarket Type3</button>
+                            <button>Grocery Store</button>
+                        </td>
+
+                        <td class="hide">
+                            <select id="type" name="type">
+                                <option value="s1">Supermarket Type1</option>
+                                <option value="s2">Supermarket Type2</option>
+                                <option value="s3">Supermarket Type3</option>
+                                <option value="s4">Grocery Store</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+    
+</html>
