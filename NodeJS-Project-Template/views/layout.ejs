@@ -1,0 +1,35 @@
+<!-- Layout page -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/css/index.js" />
+
+    <!-- 
+        common css in index.css
+        if there is seperate css for body.
+        mention style
+     -->
+  </head>
+  <body>
+    <!-- partial usage -->
+    <%- include('_header'); -%>
+
+    <!-- layout usage -->
+    <%- body -%>
+
+    <!-- partial usage -->
+    <%- include('_footer'); -%>
+
+    <!-- 
+        common js in index.js
+        if there is seperate js for body.
+        mention script
+     -->
+  </body>
+</html>
